@@ -7,12 +7,31 @@
 </head>
 <body>
 <form class="lays"> 
+
    <h3>cadastro</h3>
    <input type="text"placeholder="login"id="login">
    <input type="password"placeholder="senha"id="senha">
    <input type="submit"onclick="logar"();return false>
-   <input type="text"placeholder="telefone"id="login">
-   <input type="text"placeholder="gmail"id="login">
    </form> 
+   
+   <script> 
+
+    function logar() {
+
+        var login=document.getelementbyt('login').value;
+        var senha=document.getelementbyt('senha').value;
+       
+        if(login=="admin"&& senha="admin"){
+               alert('sucesso');
+               location.href="home.html";
+           }else{
+               alert('usuario ou senha incorretos');
+           }
+
+    }
+   
+   </script>
+
 </body>
+
 </html>
